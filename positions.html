@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container .col{
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 10px; 
+    }
+.col2{
+    position: relative;
+    top: -100px;
+    left: 100px;
+    background-color: purple;
+}
+.col3{ 
+    position: relative;
+    top: -200px;
+    left: 200px;
+    background-color: blue;
+}
+    .col4{ 
+        position: relative;
+        top: -300px;
+        left: 300px;
+        background-color: red;
+    }
+    .col1{
+        background-color: yellow;
+    }
+    .column{
+        height: 300px;
+        width: 300px;
+        border: 2px solid rgb(188, 183, 183);
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .img{
+        /* border: 1px solid red; */
+        height: 240px;
+    }
+    .img img{ 
+        height: 240px;
+        width: 300px;
+    
+    }
+    .content{
+        height: 50px;
+        /* border: 1px solid orange; */
+        position: relative;
+        top: 5px;
+    }
+    .product-title h2{
+        /* background-color: yellow; */
+        position: relative;
+        top: -20px;
+        text-align: center;
+    }
+
+    .product-des{ 
+    /* background-color: yellowgreen; */
+    position: relative;
+    top: -40px;
+    text-align: center;
+    font-weight: bold;
+     }
+     #column1{
+        position: relative;
+        left: 300px;
+        top: -315px;
+     }
+     #column2{
+        position: relative;
+        left: 600px;
+        top: -628px;
+     }
+     #column3{
+        position: relative;
+        left: 900px;
+        top: -940px;
+     }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="col col1"></div>
+        <div class="col col2"></div>
+        <div class="col col3"></div>
+        <div class="col col4"></div>
+        </div>
+
+       <div class="container-fluid">
+        <!-- First Product Start -->
+         <div class="column">
+            <div class="img"><img src="images/Honda_City_Front.jpg" alt=""></div>
+            <div class="content">
+                <div class="product-title"><h2>Produt Abc</h2></div>
+                <div class="product-des">Rs:5000</div>
+            </div>
+         </div>
+         <!-- First Product End -->
+        
+         <!-- Second Product Start -->
+         <div class="column" id="column1">
+            <div class="img"><img src="images/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg" alt=""></div>
+            <div class="content">
+                <div class="product-title"><h2>Produt Abc</h2></div>
+                <div class="product-des">Rs:5000</div>
+            </div>
+         </div>
+         <!-- Second Product End -->
+         
+        <!-- Third Product Start -->
+         <div class="column" id="column2">
+            <div class="img"><img src="images/Honda_City_Front.jpg" alt=""></div>
+            <div class="content">
+                <div class="product-title"><h2>Produt Abc</h2></div>
+                <div class="product-des">Rs:5000</div>
+            </div>
+         </div>
+         <!-- Third Product End -->
+      
+      <!-- Fourth Product Start -->
+         <div class="column" id="column3">
+            <div class="img"><img src="images/Cover (1).jpg" alt=""></div>
+            <div class="content">
+                <div class="product-title"><h2>Produt Abc</h2></div>
+                <div class="product-des">Rs:5000</div>
+            </div>
+         </div>
+         <!-- Fourth Product End -->
+      
+      
+      
+      
+      
+        </div>
+       
+            
+
+        
+
+
+
+
+       
+</body>
+</html>
