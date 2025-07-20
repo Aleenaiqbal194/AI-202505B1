@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        header .container{
+            height: 100px;
+            border-bottom: 1px solid rgb(190, 190, 190);
+            width: 100%;
+        }
+        header .container .navbar{
+            height: inherit;
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .container .navbar .logo{
+            height: inherit;
+            width: 15%;
+        }
+        header .container .navbar .nav{
+            height: inherit;
+            width: 75%;
+        }
+        header .container .navbar .logo h2{
+            position: relative;
+            top: 15px;
+            text-align: center;
+        }
+        header .container .navbar .nav ul{
+            padding: 10px;
+            position: relative;
+            top: 15px;
+        }
+        header .container .navbar .nav ul li{
+            display: inline;
+            padding: 10px;
+            margin-left: 15px;
+        }
+        #Gallery{
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            background-color: rgb(231, 231, 231);
+            left: 30px;
+            width: 100px;
+            padding:10px ;
+            display: none;
+        }
+        .dropdown .item{
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            padding-top: 3px;
+        }
+        #Gallery:hover .dropdown{
+            display: block;
+        }
+        /* cover image css start */
+        #cover .background{
+            height: 600px;
+            background-image: linear-gradient(to top left, rgb(35, 35, 107),black
+            )
+        }
+        #cover .background .col{
+            width: 30%;
+            padding: 10px;
+            position: relative;
+            top: 30%;
+            left: 5%;
+        }
+        #cover .background .col h1{
+            text-align: center;
+            font-size: 55px;
+
+        }
+        #cover .background .col h1 span{
+            color: rgb(79, 74, 74);
+        }
+    </style>
+</head>
+<body>
+    <!-- header start -->
+     <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>PlantNest</h2>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li id="Gallery">Gallery
+                            <i class="fa fa-caret-down"></i>
+                            <div class="dropdown">
+                                <div class="item">Indoor Plants</div>
+                                <div class="item">Outdoor Plants</div>
+                            </div>
+
+                        </li>
+                        <li>Policy</li>
+                        <li>Contact</li>
+                        <li>Faq</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </header>
+     <!-- header end -->
+      <!-- cover image section start -->
+       <section id="cover">
+        <div class="background">
+            <div class="col">
+                <h1><span>Welcome</span>To Our Plant Nursery</h1>
+            </div>
+        </div>
+
+       </section>
+     <!-- cover image section end -->
+    
+</body>
+</html>
