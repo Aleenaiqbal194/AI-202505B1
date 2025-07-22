@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-template-rows: 200px;
+            grid-auto-flow: dense;
+            grid-gap: 10px;
+        }
+        .col{
+            display: flex;
+        }
+        img{
+            height: auto;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .col-1{
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        .col-2{
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        .col-3{
+            grid-row: span 3;
+            grid-column: span 3;
+        }
+        .col-4{
+            grid-column: span 1;
+        }
+        .col-5{
+            grid-column: span 1;
+        
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col col-1"><img src="images/download.jfif" alt=""></div>
+        <div class="col col-2"><img src="images/images (1).jfif" alt=""></div>
+        <div class="col col-3"><img src="images/images (2).jfif" alt=""></div>
+        <div class="col col-4"><img src="images/images (3).jfif" alt=""></div>
+        <div class="col col-5"><img src="images/download.jfif" alt=""></div>
+        <div class="col col-6"><img src="images/download (1).jfif" alt=""></div>
+        <div class="col col-7"><img src="images/images (6).jfif" alt=""></div>
+        
+
+    </div>
+</body>
+</html>
