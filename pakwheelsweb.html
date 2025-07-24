@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: white;
+}
+
+.main-wrapper {
+  background-image: linear-gradient(to top, rgb(35, 35, 107), black);
+  padding: 0px 60px;
+
+}
+
+.top-bar {
+  color: #ccc;
+  padding: 5px 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+.auth-links {
+  margin-top: 10px;
+}
+.auth-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.logo img {
+  height: 35px;
+}
+
+nav ul.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.menu li {
+  position: relative;
+  margin: 0 10px;
+}
+
+nav ul.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 8px 10px;
+  display: block;
+}
+
+.post-btn {
+  background: #e74c3c;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: #1a1a1a;
+  display: none;
+  flex-direction: column;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.search-bar button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.advanced-filter {
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+<div class="main-wrapper">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <p>📱 Download App via SMS</p>
+    <div class="auth-links">
+      <a href="#">اردو</a> |
+      <a href="#">Sign Up</a> |
+      <a href="#">Sign In</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+    <header class="navbar">
+    <div class="logo">
+      <img src="img/new-pw-logo-white-618259573a0604d3ae593b46213e2ab390bcc33336d4bdc3486405c7351ded13.svg">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li class="dropdown">
+          <a href="#">Used Cars ▾	</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Search Used Cars</a></li>
+            <li><a href="#">Sell Your Car</a></li>
+            <li><a href="#">Featured Cars</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">New Cars ▾	</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Search New Cars</a></li>
+            <li><a href="#">Compare Cars</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Bikes ▾	</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Used Bikes</a></li>
+            <li><a href="#">New Bikes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Auto Store ▾	</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Car Accessories</a></li>
+            <li><a href="#">Bike Accessories</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Blog</a></li>
+        <li class="dropdown">
+          <a href="#">More ▾	 </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Cool Rides</a></li>
+            <li><a href="#">Auction Sheet</a></li>
+          </ul>
+        </li>
+        <li><a class="post-btn" href="#">Post an Ad ▾</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Find Used Cars in Pakistan</h1>
+    <p>With thousands of cars, we have just the right one for you</p>
+    
+    <div class="search-bar">
+      <input type="text" placeholder="Car Make or Model" />
+      <select>
+        <option>All Cities</option>
+      </select>
+      <select>
+        <option>Price Range</option>
+      </select>
+      <button><i class="fa fa-search"></i></button>
+    </div>
+
+    <button class="advanced-filter">Advanced Filter ▾	</button>
+  </section>
+</div>
+</body>
+</html>
+
+</body>
+</html>
