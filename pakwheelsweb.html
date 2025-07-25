@@ -153,6 +153,209 @@ nav ul.menu a {
   border-radius: 5px;
   cursor: pointer;
 }
+/* HERO SECTION END */
+
+/* SECTION 1 START */
+
+.container {
+  display: flex;
+}
+.container h2{
+  color: black;
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+  z-index: 99;
+  margin-left: 373px;
+
+}
+
+
+
+.main-container{
+            display: grid;
+            grid-template-columns: 200px 400px  ;
+            grid-template-rows: 100px 200px 300px ;
+            grid-gap: 10px;
+            /* margin-top: 100px; */
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: -35px;
+        }
+
+.main-container .col{
+    border: 1px solid rgb(166, 156, 156);
+    justify-content: center;
+        }
+
+        .col-1{
+          grid-column: span 3;
+          grid-row: span 2;
+        }
+        .container-fluid h1{
+          color: rgb(12, 12, 56);
+          font-size: larger;
+          font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          margin-top: -550px;
+          margin-left: 250px;
+        }
+        .container-fluid ul{
+          list-style: none;
+          padding: 0;
+          margin-bottom: 20px;
+          text-align: left;
+          color: black;
+          margin-left: 240px;
+        }
+        .container-fluid ul li::before{
+           content: "✔";
+           color: green;
+           margin-right: 10px;
+           
+        }
+        .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 240px;
+      margin-top: 10px;
+    }
+    .btn-red {
+      background-color: #c0392b;
+      color: white;
+    }
+        .col h2{
+          color: rgb(100, 94, 94);
+          font-size: xx-large;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          margin-left: 640px;
+          margin-top: -100px;
+        }
+        .option h3{
+          color:rgb(12, 12, 56) ;
+          font-size: larger;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          margin-top: -135px;
+          margin-left: 760px;
+        }
+       
+    .option ul{
+       list-style: none;
+          padding: 0;
+          margin-bottom: 20px;
+          text-align: left;
+          color: black;
+          margin-left: 750px;
+    }
+    .option ul li::before{
+      content: "✔";
+           color: green;
+           margin-right: 10px;
+    }
+     .blue {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-left: 750px;
+      margin-top: 10px;
+
+    }
+
+     .blue {
+      background-color: rgb(79, 68, 207);
+      color: white;
+    }
+/* SECTION 1 END */
+    
+/* SECTION 2 START  */
+
+
+    .browse-container {
+      max-width: 1200px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 130px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 25px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 25px;
+    }
+
+    .tab {
+      padding-bottom: 8px;
+      cursor: pointer;
+      color: #a27b7b;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .tab.active {
+      color: #000;
+    }
+
+    .tab.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background-color: #2979ff;
+    }
+
+    .grid-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+    }
+
+    .cards {
+      width: 150px;
+      background-color: #fafafa;
+      border: 1px solid #696969;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(158, 153, 153, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .cards:hover {
+      transform: translateY(-5px);
+    }
+
+    .cards img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      
+    }
+
+    .cards p {
+      font-size: 20px;
+      font-style: inherit;
+      color: #494040;
+      margin: 0;
+      /* background-color: yellow; */
+    }
+        /* SECTION 2 END */
+        /* SECTION 3 START */
+       
 
 </style>
 <body>
@@ -170,7 +373,7 @@ nav ul.menu a {
   <!-- Navbar -->
     <header class="navbar">
     <div class="logo">
-      <img src="img/new-pw-logo-white-618259573a0604d3ae593b46213e2ab390bcc33336d4bdc3486405c7351ded13.svg">
+      <img src="images/new-pw-logo-white-618259573a0604d3ae593b46213e2ab390bcc33336d4bdc3486405c7351ded13.svg">
     </div>
     <nav>
       <ul class="menu">
@@ -237,8 +440,113 @@ nav ul.menu a {
     <button class="advanced-filter">Advanced Filter ▾	</button>
   </section>
 </div>
-</body>
-</html>
+<!-- HERO SECTION END -->
 
+<!-- SECTION 1 START -->
+<div class="container">
+  <h2>Sell Your Car on PakWheels and Get the Best Price</h2>
+  <h1>Sell It Myself!</h1>
+</div>
+
+
+<div class="main-container">
+    <div class="col col-1"></div>
+</div>
+
+
+<div class="container-fluid">
+  <h1>Sell it Myself!</h1>
+  <ul>
+     <li>Post an ad in 2 minutes</li>
+          <li>20 million users</li>
+          <li>Connect directly with buyers</li>
+  </ul>
+   <button class="btn btn-red">Post Your Ad</button>
+
+  
+
+  <div class="col">
+  <h2>OR</h2>
+  </div>
+
+
+  <div class="option">
+  <h3>Sell It For Me</h3>
+  <ul>
+     <li>Sell your car without hassle</li>
+          <li>Free Inspection & Featured ad</li>
+          <li>Maximize offer with sales agent</li>
+  </ul>
+   <button class="blue">Help Me Sell My Car!</button>
+
+</div>
+<!-- SECTION 1 END -->
+ 
+<!-- SECTION 2 START -->
+  <div class="browse-container">
+    <h2>Browse Used Cars</h2>
+   <div class="tabs">
+    <div class="tab active">Category</div>
+    <div class="tab">City</div>
+    <div class="tab">Make</div>
+    <div class="tab">Model</div>
+    <div class="tab">Budget</div>
+    <div class="tab">Body Type</div>
+ </div>
+ <div class="grid-cards">
+  <div class="cards">
+    <img src="images/1.svg" alt="automatic" />
+        <p>Automatic cars</p>
+  </div>
+  <div class="cards">
+<img src="images/2.svg" alt="Imported" />
+        <p>Imported cars</p>
+  </div>
+  <div class="cards">
+    <img src="images/3.svg" alt="Jeep" />
+        <p>Jeep</p>
+  </div>
+  <div class="cards">
+    <img src="images/4.svg" alt="Hybrid" />
+        <p>Hybrid cars</p>
+  </div>
+  <div class="cards">
+    <img src="images/5.svg" alt="Diesel" />
+        <p>Diesel cars</p>
+  </div>
+  <div class="cards">
+      <img src="images/6.svg" alt="1000cc" />
+        <p>1000cc cars</p>
+  </div>
+  <div class="cards">
+    <img src="images/7.svg" alt="Small" />
+        <p>Small cars</p>
+      </div>
+  <div class="cards">
+     <img src="images/8.svg" alt="Superdari" />
+        <p>Superdari</p>
+  </div>
+  <div class="cards">
+     <img src="images/9.svg" alt="Urgent" />
+        <p>Urgent</p>
+  </div>
+  <div class="cards">
+     <img src="images/10.svg" alt="Japanese" />
+        <p>Japanese cars</p>
+  </div>
+  <div class="cards">
+     <img src="images/11.svg" alt="2 door" />
+        <p>2 Door</p>
+  </div>
+  <div class="cards">
+     <img src="images/12.svg" alt="3 door" />
+        <p>3 Door</p>
+  </div>
+ </div>
+  </div>
+<!-- SECTION 2 END -->
+ 
+<!-- SECTION 3 START -->
+ <h2></h2>
 </body>
 </html>
