@@ -53,13 +53,79 @@
 
 // Assignment Operator
 // =, +=, -=, *=, /=, %=
-let a = 20;
-let b = 10;
+// let a = 20;
+// let b = 10;
 
-a += b 
-a -= b
-a *= b
-a /= b
- document.write(a)
+// a += b 
+// a -= b
+// a *= b
+// a /= b
+//  document.write(a)
+
+
+
+// #if else
+
+    // let language = prompt("enter your favourite language")
+
+    // if(language == "html"){
+         
+    //     document.write("html makes the structure website")
+
+    // }
+    //  else if(language == "Js"){
+
+    //     document.write("Js gives functionality")
+
+    //  }
+    //  else if(language == "php"){
+
+    //      document.write("php is used to make dynamic web pages")
+
+    //  }
+    //  else{
+
+    //     document.write("Not matched")
+    //  }
+
+// let num1 = +prompt("enter your first number")
+// let num2 = +prompt("enter your second number")
+// let operator = prompt("enter your operator")
+
+// if(operator == "+"){
+
+//     document.write(num1 + num2)
+
+// }
+//  else if(operator == "-"){
+//     document.write(num1 - num2)
+//  }
+//   else if(operator == "*"){
+//     document.write(num1 * num2)
+// }
+//  else{
+//     document.write("invalid operator")
+//  }
+
+// nested if else 
+
+    let nationality = prompt("Please enter your nationality")
+    let age = prompt("Enter your age")
+
+    if(nationality == "pakistani"){
+
+        if(age >= 18){
+              document.write("You are eligible for vote")
+        }
+
+        else{
+              document.write("You are not eligible for vote")
+        }
+
+    }
+
+    else{
+        document.write("Only allow pakistani")
+    }
  
 
